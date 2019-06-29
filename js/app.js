@@ -3,6 +3,28 @@
 window.onload = function(event) {
 	document.getElementById("copyright-year").textContent = (new Date()).getFullYear();
 
+	function check(first, second) {
+		if (!first || !second) {
+			return "Input fields must not be empty";
+		} else if (first.indexOf(" ") !== -1 || second.indexOf(" ") !== -1) {
+			return "Input fields must not contain white space";
+		} else {
+			first = first.toLowerCase();
+			second = second.toLowerCase();
+
+			let check = true
+
+			for (let i = 0; i < second.length; i++) {
+				if (first.indexOf(second[i]) === -1) {
+					check = false;
+					break;
+				}
+			}
+
+			return check;
+		}
+	}
+
 	function toggle(chevron) {
 		let task = document.getElementById("task");
 
@@ -35,5 +57,7 @@ window.onload = function(event) {
 	let form = document.getElementById("form");
 	form.addEventListener("submit", function(event) {
 		event.preventDefault();
+
+		check(this.children[0].value, this.children[1].value);
 	});
 };
