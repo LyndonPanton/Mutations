@@ -74,6 +74,7 @@ input[type="text"] {
 	border-bottom: 1px black solid;
 	background-color: transparent;
 	text-align: center;
+	font-family: fantasy;
 }
 
 input[type="text"]:focus {
