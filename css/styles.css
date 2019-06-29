@@ -120,3 +120,37 @@ main {
 
 
 /* FOOTER */
+footer {
+	position: absolute;
+	bottom: 0;
+	min-width: 100%;
+	padding: 1vh 0;
+	background-color: #FD5F00;
+	color: white;
+}
+
+.more-link {
+	font-size: 1.2em;
+	color: black;
+}
+
+.more-link:active {
+	color: purple !important;
+}
+
+.more-link:hover {
+	color: lime;
+}
+
+#copyright {
+	display: block;
+}
+
+#more {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+	padding: 1vh 0 0;
+	font-size: 1.1em;
+}
