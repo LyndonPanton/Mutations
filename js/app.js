@@ -4,10 +4,14 @@ window.onload = function(event) {
 	document.getElementById("copyright-year").textContent = (new Date()).getFullYear();
 
 	function check(first, second) {
+		let regex = /[^a-zA-Z]/gi;
+
 		if (!first || !second) {
 			return display("???");
 		} else if (first.indexOf(" ") !== -1 || second.indexOf(" ") !== -1) {
 			return display("Input fields must not contain white space");
+		} else if (regex.test(first) || regex.test(second)) {
+			return display("Input must only contain alphabetical characters");
 		} else {
 			first = first.toLowerCase();
 			second = second.toLowerCase();
