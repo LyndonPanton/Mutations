@@ -14,3 +14,53 @@ body, html {
 	font-size: 16px;
 	color: black;
 }
+
+
+
+/* HEADER */
+h1 {
+	margin: 0;
+	padding: 1vh 0;
+}
+
+header {
+	background-color: #005792;
+	font-family: fantasy;
+	color: white;
+}
+
+.fas {
+	transform: scale(2, 1);
+	font-size: 1.2em;
+}
+
+.hidden {
+	display: none;
+}
+
+.task-line {
+	display: block;
+	padding: 0.5vh 0;
+}
+
+.visible {
+	display: block;
+}
+
+#task {
+	padding: 0.5vh 10vw;
+	background-color: #FAF6DE;
+	color: black;
+}
+
+#task-head {
+	text-decoration: underline;
+}
+
+
+
+/* MAIN */
+
+
+
+/* FOOTER */
