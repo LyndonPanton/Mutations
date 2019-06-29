@@ -17,4 +17,10 @@ window.onload = function(event) {
 	chevron.addEventListener("click", function(event) {
 		toggle(this);
 	});
+
+	chevron.addEventListener("keydown", function(event) {
+		if (event.keyCode === 13) {
+			toggle(this);
+		} 
+	});
 };
