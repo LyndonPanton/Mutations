@@ -5,9 +5,9 @@ window.onload = function(event) {
 
 	function check(first, second) {
 		if (!first || !second) {
-			return "Input fields must not be empty";
+			return display("???");
 		} else if (first.indexOf(" ") !== -1 || second.indexOf(" ") !== -1) {
-			return "Input fields must not contain white space";
+			return display("Input fields must not contain white space");
 		} else {
 			first = first.toLowerCase();
 			second = second.toLowerCase();
@@ -21,8 +21,12 @@ window.onload = function(event) {
 				}
 			}
 
-			return check;
+			return display(check);
 		}
+	}
+
+	function display(result) {
+		document.getElementById("display").textContent = result;
 	}
 
 	function toggle(chevron) {
