@@ -60,7 +60,63 @@ header {
 
 
 /* MAIN */
+input {
+	display: block;
+	margin: 0 auto 3vh;
+	font-family: Copperplate, Copperplate Gothic Light, fantasy;
+	font-size: 1.1em;
+}
 
+input[type="text"] {
+	border: none;
+	border-bottom: 1px black solid;
+	background-color: transparent;
+	text-align: center;
+}
+
+input[type="text"]:focus {
+	font-weight: bold;
+}
+
+input[type="text"]:focus::placeholder {
+	opacity: 0.8;
+}
+
+input[type="text"]::placeholder {
+	opacity: 0.6;
+	color: black;
+}
+
+main {
+	padding-top: 15vh;
+}
+
+#display {
+	margin: 0 15vw 1vh;
+	border-top-color: red;
+	border-right-color: orange;
+	border-bottom-color: green;
+	border-left-color: blue;
+	border-style: solid;
+	border-width: 4px;
+	padding: 1vh 0;
+	background-color: lightblue;
+}
+
+#form-submit {
+	border: 2px seagreen solid;
+	border-radius: 5px;
+	padding: 0.5vh 4vw;
+	background-color: royalblue;
+	font-family: Copperplate, Copperplate Gothic Light, fantasy;
+	color: white;
+}
+
+#form-submit:active {
+	border-color: indianred;
+	background-color: pink;
+	color: black;
+}
 
 
 /* FOOTER */
