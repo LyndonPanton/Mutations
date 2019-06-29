@@ -39,7 +39,7 @@ header {
 }
 
 .task-line {
-	display: block;
+	display: inline-block;
 	padding: 0.5vh 0;
 }
 
